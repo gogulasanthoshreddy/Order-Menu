@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order - La Pergola Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .menu-section {
+            margin-bottom: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+            gap: 10px; /* Adjust spacing between items */
+        }
+
+        .menu-grid div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Select Your Menu Items</h1>
+
+    <form id="menuForm">
+        <!-- User Information Section -->
+        <div class="menu-section">
+            <h3>Your Information</h3>
+            <label for="name">Name (required):</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Phone Number (required):</label><br>
+            <input type="text" id="phone" name="phone" required><br><br>
+
+            <label for="address">Address (optional):</label><br>
+            <input type="text" id="address" name="address"><br><br>
+        </div>
+
+        <!-- Menu Sections -->
+        <div class="menu-section">
+            <h3>Pizzas</h3>
+            <div class="menu-grid">
+                <div><input type="checkbox" name="item" value="Margherita - €9.50"> Margherita - €9.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Funghi - €10.50"> Pizza Funghi - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Prosciutto - €10.50"> Pizza Prosciutto - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Salami - €10.50"> Pizza Salami - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Tonno - €10.50"> Pizza Tonno - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Kebappizza - €10.90"> Pizza Kebappizza - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Kolleger - €11.90"> Pizza Kolleger - €11.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Frutti di mare - €11.90"> Pizza Frutti di mare - €11.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Rucola - €10.50"> Pizza Rucola - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Hawaii - €10.50"> Pizza Hawaii - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Spinaci - €10.90"> Pizza Spinaci - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Palermo - €11.90"> Pizza Palermo - €11.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Vesiuvio - €10.90"> Pizza Vesiuvio - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Fresca - €10.50"> Pizza Fresca - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Naturale - €10.50"> Pizza Naturale - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Diavolo - €10.90"> Pizza Diavolo - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Mona Lisa - €10.90"> Pizza Mona Lisa - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Rustica - €10.50"> Pizza Rustica - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Bomba - €10.50"> Pizza Bomba - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Quattro Formaggi - €10.90"> Pizza Quattro Formaggi - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Quattro Stagioni - €10.50"> Pizza Quattro Stagioni - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Liebling - €10.50"> Pizza Liebling - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Capricciosa - €10.50"> Pizza Capricciosa - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Regina - €10.50"> Pizza Regina - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Mafiosi - €10.50"> Pizza Mafiosi - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Cardinale - €10.50"> Pizza Cardinale - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza al Capone - €10.90"> Pizza al Capone - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Feuerwerk - €10.90"> Pizza Feuerwerk - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Toscana - €10.90"> Pizza Toscana - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Siciliana - €10.90"> Pizza Siciliana - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Provinziale - €10.50"> Pizza Provinziale - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Mexico - €10.90"> Pizza Mexico - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Calzone - €10.50"> Pizza Calzone - €10.50</div>
+                <div><input type="checkbox" name="item" value="Pizza Punjabi - €10.90"> Pizza Punjabi - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizza Keni - €10.90"> Pizza Keni - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pizzabrot - €4.50"> Pizzabrot - €4.50</div>
+                <div><input type="checkbox" name="item" value="2 Personen Pizza - €18.90"> 2 Personen Pizza - €18.90</div>
+                <div><input type="checkbox" name="item" value="Party Pizza - €27.90"> Party Pizza - €27.90</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Salads</h3>
+            <div class="menu-grid">
+                <div><input type="checkbox" name="item" value="Gemischter Salat klein - €5.90"> Gemischter Salat klein - €5.90</div>
+                <div><input type="checkbox" name="item" value="Gemischter Salat groß - €7.50"> Gemischter Salat groß - €7.50</div>
+                <div><input type="checkbox" name="item" value="Grüner Salat - €5.90"> Grüner Salat - €5.90</div>
+                <div><input type="checkbox" name="item" value="Kartoffelsalat - €5.90"> Kartoffelsalat - €5.90</div>
+                <div><input type="checkbox" name="item" value="Griechischer Salat mit Schafskäse - €7.50"> Griechischer Salat mit Schafskäse - €7.50</div>
+                <div><input type="checkbox" name="item" value="Vogerlsalat - €5.90"> Vogerlsalat - €5.90</div>
+                <div><input type="checkbox" name="item" value="Backhendlsalat - €7.50"> Backhendlsalat - €7.50</div>
+                <div><input type="checkbox" name="item" value="Fitness Salat - €7.50"> Fitness Salat - €7.50</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Soups</h3>
+            <div class="menu-grid">
+                <div><input type="checkbox" name="item" value="Tomatencremesuppe - €5.90"> Tomatencremesuppe - €5.90</div>
+                <div><input type="checkbox" name="item" value="Knoblauchcremesuppe - €5.90"> Knoblauchcremesuppe - €5.90</div>
+                <div><input type="checkbox" name="item" value="Fischsuppe - €7.50"> Fischsuppe - €7.50</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Pastas</h3>
+            <div class="menu-grid">
+                <div><input type="checkbox" name="item" value="Lasagne al Forno XL - €10.90"> Lasagne al Forno XL - €10.90</div>
+                <div><input type="checkbox" name="item" value="Pasta Piemontese - €10.90"> Pasta Piemontese - €10.90</div>
+                <div><input type="checkbox" name="item" value="Gemüse Lasagne al Forno - €10.90"> Gemüse Lasagne al Forno - €10.90</div>
+                <div><input type="checkbox" name="item" value="Puten Nudeln - €10.90"> Puten Nudeln - €10.90</div>
+                <div><input type="checkbox" name="item" value="Spaghetti Carbonara - €11.90"> Spaghetti Carbonara - €11.90</div>
+                <div><input type="checkbox" name="item" value="Spaghetti Bolognese - €11.90"> Spaghetti Bolognese - €11.90</div>
+                <div><input type="checkbox" name="item" value="Penne all’ Primavera - €11.90"> Penne all’ Primavera - €11.90</div>
+                <div><input type="checkbox" name="item" value="Penne all’ Arrabbiata - €10.90"> Penne all’ Arrabbiata - €10.90</div>
+                <div><input type="checkbox" name="item" value="Penne Lachs - €12.90"> Penne Lachs - €12.90</div>
+                <div><input type="checkbox" name="item" value="Tortellini all’ Panna - €12.00"> Tortellini all’ Panna - €12.00</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Desserts</h3>
+            <div class="menu-grid">
+                <div><input type="checkbox" name="item" value="Marmelade Palatschinken - €3.90"> Marmelade Palatschinken - €3.90</div>
+                <div><input type="checkbox" name="item" value="Schoko Palatschinken - €2.50"> Schoko Palatschinken - €2.50</div>
+                <div><input type="checkbox" name="item" value="Nuss-Nougat Palatschinken - €1.90"> Nuss-Nougat Palatschinken - €1.90</div>
+                <div><input type="checkbox" name="item" value="Apfelstrudel - €2.00"> Apfelstrudel - €2.00</div>
+                <div><input type="checkbox" name="item" value="Tiramisu - €3.50"> Tiramisu - €3.50</div>
+                <div><input type="checkbox" name="item" value="Erdbeer-Tiramisu - €2.80"> Erdbeer-Tiramisu - €2.80</div>
+                <div><input type="checkbox" name="item" value="Profiteroles - €5.50"> Profiteroles - €5.50</div>
+                <div><input type="checkbox" name="item" value="Gemischtes Eis - €5.50"> Gemischtes Eis - €5.50</div>
+                <div><input type="checkbox" name="item" value="Mohr im Hemd - €5.50"> Mohr im Hemd - €5.50</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Burgers</h3>
+            <div class="menu-grid">
+                <div><input type="checkbox" name="item" value="Hamburger - €10.90"> Hamburger - €10.90</div>
+                <div><input type="checkbox" name="item" value="Cheeseburger - €10.90"> Cheeseburger - €10.90</div>
+                <div><input type="checkbox" name="item" value="Speckburger - €11.90"> Speckburger - €11.90</div>
+                <div><input type="checkbox" name="item" value="Fazi Burger - €11.90"> Fazi Burger - €11.90</div>
+                <div><input type="checkbox" name="item" value="Double Cheeseburger - €14.90"> Double Cheeseburger - €14.90</div>
+                <div><input type="checkbox" name="item" value="Crispy Chicken Burger - €10.90"> Crispy Chicken Burger - €10.90</div>
+                <div><input type="checkbox" name="item" value="Vegini Burger - €10.90"> Vegini Burger - €10.90</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Drinks</h3>
+            <div class="menu-grid">
+                <div><input type="checkbox" name="item" value="Coca Cola 1l - €3.90"> Coca Cola 1l - €3.90</div>
+                <div><input type="checkbox" name="item" value="Getränke 0,5l - €2.50"> Getränke 0,5l - €2.50</div>
+                <div><input type="checkbox" name="item" value="Pepsi 0,33l - €1.90"> Pepsi 0,33l - €1.90</div>
+                <div><input type="checkbox" name="item" value="Mineralwasser 0,5l - €2.00"> Mineralwasser 0,5l - €2.00</div>
+                <div><input type="checkbox" name="item" value="Red Bull 0,25l - €3.50"> Red Bull 0,25l - €3.50</div>
+                <div><input type="checkbox" name="item" value="Bier Dose 0,5l - €2.80"> Bier Dose 0,5l - €2.80</div>
+                <div><input type="checkbox" name="item" value="Eistee 1,5l - €4.90"> Eistee 1,5l - €4.90</div>
+                <div><input type="checkbox" name="item" value="Flasche Wein rot/weiß 0,75l - €9.90"> Flasche Wein rot/weiß 0,75l - €9.90</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>Additional Dishes</h3>
+            <div class="menu-grid">
+                <div><input type="checkbox" name="item" value="Kaiserschmarren - €9.90"> Kaiserschmarren - €9.90</div>
+                <div><input type="checkbox" name="item" value="Pommes - €4.90"> Pommes - €4.90</div>
+                <div><input type="checkbox" name="item" value="Reis Basmati - €4.90"> Reis Basmati - €4.90</div>
+                <div><input type="checkbox" name="item" value="Petersilienkartoffel - €4.90"> Petersilienkartoffel - €4.90</div>
+                <div><input type="checkbox" name="item" value="Wedges - €4.90"> Wedges - €4.90</div>
+                <div><input type="checkbox" name="item" value="Bratkartoffel - €4.90"> Bratkartoffel - €4.90</div>
+                <div><input type="checkbox" name="item" value="Süßkartoffel - €5.90"> Süßkartoffel - €5.90</div>
+            </div>
+        </div>
+
+        <input type="button" value="Send Order via WhatsApp" onclick="submitOrder()">
+    </form>
+
+    <script>
+        function submitOrder() {
+            // Gather form data
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var address = document.getElementById("address").value;
+            var form = document.getElementById("menuForm");
+
+            // Ensure required fields are filled
+            if (!name || !phone) {
+                alert("Please fill in your name and phone number.");
+                return;
+            }
+
+            // Gather selected items
+            var selectedItems = [];
+            var items = form.querySelectorAll('input[name="item"]:checked');
+            items.forEach(function(item) {
+                selectedItems.push(item.value);
+            });
+
+            // Calculate total cost
+            var totalCost = selectedItems.reduce(function(sum, item) {
+                var price = parseFloat(item.match(/€([0-9]+\.[0-9]{2})/)[1].replace(',', '.'));
+                return sum + price;
+            }, 0);
+
+            // Create the message to send
+            var message = `Order Details:\n\nName: ${name}\nPhone: ${phone}\n`;
+            if (address) {
+                message += `Address: ${address}\n`;
+            }
+            message += `\nSelected Items:\n- ${selectedItems.join('\n- ')}\n\nTotal Cost: €${totalCost.toFixed(2)}`;
+
+            // Encode the message for WhatsApp URL
+            var whatsappMessage = encodeURIComponent(message);
+
+            // WhatsApp number with international code format
+            var whatsappNumber = "+4369010655988";  // Converted from 0690 10655988
+
+            // Create WhatsApp URL
+            var whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`;
+
+            // Redirect to WhatsApp
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>
